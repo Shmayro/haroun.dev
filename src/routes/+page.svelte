@@ -12,6 +12,8 @@
 		}
 		return html;
 	});
+
+
 </script>
 
 <svelte:head>
@@ -125,6 +127,20 @@
 					</div>
 					<p class="project-title">{project.title}</p>
 					<p class="project-description">{project.description}</p>
+					{#if project.technologies?.length}
+						<div class="project-tech">
+							{#each project.technologies as tech}
+								<span class="tech-tag">{tech}</span>
+							{/each}
+						</div>
+					{/if}
+					{#if project.teamSize || project.duration}
+						<p class="project-meta">
+							{#if project.teamSize}<span>{project.teamSize}</span>{/if}
+							{#if project.teamSize && project.duration}<span class="meta-sep">·</span>{/if}
+							{#if project.duration}<span>{project.duration}</span>{/if}
+						</p>
+					{/if}
 					{#if project.url}
 						<a href={project.url} class="project-link" target="_blank" rel="noopener noreferrer">
 							<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
@@ -548,6 +564,34 @@
 		font-size: 0.92rem;
 		margin: 0;
 		line-height: 1.55;
+	}
+
+	.project-tech {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 4px;
+		margin-top: 8px;
+	}
+
+	.tech-tag {
+		display: inline-block;
+		background: var(--color-accent-light, #eef6fc);
+		color: var(--color-accent);
+		padding: 1px 7px;
+		border-radius: 4px;
+		font-size: 0.78rem;
+		font-weight: 500;
+	}
+
+	.project-meta {
+		margin: 6px 0 0;
+		font-size: 0.82rem;
+		color: var(--color-muted);
+		font-style: italic;
+	}
+
+	.meta-sep {
+		margin: 0 4px;
 	}
 
 	.project-link {

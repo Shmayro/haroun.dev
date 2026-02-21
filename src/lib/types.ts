@@ -36,6 +36,9 @@ export interface Project {
 	year: string;
 	description: string;
 	url: string | null;
+	technologies?: string[];
+	teamSize?: string;
+	duration?: string;
 }
 
 export interface Education {

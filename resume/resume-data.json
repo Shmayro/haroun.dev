@@ -14,12 +14,15 @@
     "AI/ML, process mining, and performance engineering"
   ],
   "skills": [
-    { "category": "Backend", "items": "Java, Kotlin, Spring Boot (Web/Data/Cloud/Security), Hibernate" },
-    { "category": "Frontend", "items": "Angular (12+), Vue.js, TypeScript, JavaScript" },
-    { "category": "Cloud/DevOps", "items": "Kubernetes, Helm, Docker, AWS, Jenkins, GitHub Actions" },
-    { "category": "Databases", "items": "PostgreSQL, Oracle, MySQL, MongoDB" },
-    { "category": "Testing & Performance", "items": "Gatling, JUnit 5, Selenium, Cypress" },
-    { "category": "Other", "items": "R, Python, BPMN, Process Mining, AI/ML (enthusiast)" }
+    { "category": "Backend", "items": "Java, Kotlin, Spring Boot (Web, Data, Cloud, Security, Batch), Hibernate" },
+    { "category": "Frontend", "items": "SvelteKit, Angular, React, Vue.js, TypeScript, JavaScript, p5.js" },
+    { "category": "AI/LLM Engineering", "items": "LangGraph, LightRAG, RAG Architectures, Agentic Workflows" },
+    { "category": "Cloud & DevOps", "items": "Kubernetes, Docker, AWS, Helm, Jenkins, GitHub Actions" },
+    { "category": "Databases", "items": "PostgreSQL, Oracle, MongoDB, MySQL" },
+    { "category": "Testing & Performance", "items": "Gatling, JUnit 5, Selenium, Cypress, Cucumber" },
+    { "category": "AI Coding Tools", "items": "Claude Code, GitHub Copilot, Codex CLI, Gemini CLI" },
+    { "category": "Methodologies", "items": "Scrum, Agile, TDD, CI/CD, Code Review, AI-Assisted Research" },
+    { "category": "Other", "items": "Python, R, Scala, Go, Rust, PocketBase, BPMN, Process Mining" }
   ],
   "experience": [
     {
@@ -77,35 +80,57 @@
       "title": "Dockerized Android Emulator",
       "year": "2024",
       "description": "Developed a Docker-based Android emulator supporting multiple CPU architectures (x86, arm64 planned), with ADB integration and scrcpy-web for browser-based real-time control. The project has gained strong community traction with 350+ stars and 29 forks on GitHub.",
-      "url": "https://github.com/Shmayro/dockerify-android"
+      "url": "https://github.com/Shmayro/dockerify-android",
+      "technologies": ["Docker", "Android SDK", "ADB", "scrcpy-web"],
+      "teamSize": "solo"
     },
     {
       "name": "Getjobs",
-      "title": "Job Search Engine",
+      "title": "Career & Job Search Engine",
       "year": "2018",
-      "description": "Designed and developed a career platform with job search and CV builder using Vue.js, Laravel, and REST APIs.",
-      "url": null
+      "description": "Designed and developed a career platform with job search and CV builder.",
+      "url": null,
+      "technologies": ["Vue.js", "Laravel", "REST API"],
+      "teamSize": "solo"
+    },
+    {
+      "name": "Projet TER",
+      "title": "GIS Wildfire Simulation",
+      "year": "2016",
+      "description": "Analyzed and simulated wildfire propagation to assess risk of uncontrolled fire spread across terrain using geographic data and real-time weather APIs.",
+      "url": null,
+      "technologies": ["Java EE", "MySQL", "Bootstrap", "ArcGIS API", "Google Maps API", "OpenWeatherMap API"],
+      "teamSize": "team of 6",
+      "duration": "2 months"
     },
     {
       "name": "PyTank",
       "title": "Educational Python Game",
       "year": "2015",
       "description": "Built a gamified learning platform to teach Python through algorithmic tank battles.",
-      "url": null
+      "url": null,
+      "technologies": ["Java", "Python", "JavaScript"],
+      "teamSize": "team of 6"
     },
     {
       "name": "YHEventApp",
       "title": "Event Booking Web App",
       "year": "2015",
-      "description": "Implemented a system to manage event registrations and visualizations with PHP, MySQL, and Chart.js.",
-      "url": null
+      "description": "Implemented a system to manage event registrations and visualizations.",
+      "url": null,
+      "technologies": ["PHP", "MySQL", "jQuery", "Chart.js"],
+      "teamSize": "solo",
+      "duration": "1 month"
     },
     {
       "name": "University Management System",
       "title": "University Management System",
       "year": "2014",
       "description": "Created an application for academic management (students, schedules, grades) with automated timetable generation.",
-      "url": null
+      "url": null,
+      "technologies": ["VB.NET", "LINQ to SQL", "Crystal Reports", "SQL Server"],
+      "teamSize": "solo",
+      "duration": "2 months"
     }
   ],
   "education": [

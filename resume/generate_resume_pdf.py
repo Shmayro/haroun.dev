@@ -44,7 +44,7 @@ def build_resume_with_links(output_pdf_path: str) -> None:
         pagesize=A4,
         rightMargin=40,
         leftMargin=40,
-        topMargin=40,
+        topMargin=30,
         bottomMargin=30,
     )
     styles = getSampleStyleSheet()
@@ -92,7 +92,7 @@ def build_resume_with_links(output_pdf_path: str) -> None:
         textColor=colors.grey,
     )
 
-    frame = Frame(doc.leftMargin, doc.bottomMargin, doc.width, doc.height - 20, id="normal")
+    frame = Frame(doc.leftMargin, doc.bottomMargin, doc.width, doc.height, id="normal")
     template = PageTemplate(id="resume", frames=frame)
     doc.addPageTemplates([template])
 
