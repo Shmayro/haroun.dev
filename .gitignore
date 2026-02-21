@@ -1,0 +1,14 @@
+node_modules/
+.svelte-kit/
+build/
+dist/
+*.pdf
+Haroun_Resume_Package.zip
+Haroun_Resume.html
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+.DS_Store
+docs/plans/
