@@ -1,0 +1,119 @@
+{
+  "name": "Haroun EL ALAMI",
+  "title": "Senior Full Stack Software Engineer | Tech Lead",
+  "location": "Marseille, France",
+  "email": "me@haroun.dev",
+  "phone": "+33 6 42 20 17 50",
+  "linkedin": "linkedin.com/in/harounelalami",
+  "website": "haroun.dev",
+  "github": "github.com/Shmayro",
+  "summary": "Results-driven Senior Software Engineer with 8+ years of experience in full-stack development, technical leadership, and cloud-native solutions. Proven expertise in designing, building, and optimizing enterprise-scale applications with Java, Kotlin, Spring Boot, and Angular. Strong background in DevOps, Kubernetes, and AWS, combined with mentoring and code quality leadership. Enthusiastic about AI/ML, process mining, and performance engineering, with a strong ability to bridge technical depth and business needs.",
+  "skills": [
+    { "category": "Backend", "items": "Java, Kotlin, Spring Boot (Web/Data/Cloud/Security), Hibernate" },
+    { "category": "Frontend", "items": "Angular (12+), Vue.js, TypeScript, JavaScript" },
+    { "category": "Cloud/DevOps", "items": "Kubernetes, Helm, Docker, AWS, Jenkins, GitHub Actions" },
+    { "category": "Databases", "items": "PostgreSQL, Oracle, MySQL, MongoDB" },
+    { "category": "Testing & Performance", "items": "Gatling, JUnit 5, Selenium, Cypress" },
+    { "category": "Other", "items": "R, Python, BPMN, Process Mining, AI/ML (enthusiast)" }
+  ],
+  "experience": [
+    {
+      "company": "Bonitasoft",
+      "role": "R&D Runtime Full Stack Engineer",
+      "period": "Sept 2021 – Present",
+      "location": "Grenoble, France",
+      "bullets": [
+        "Led development and optimization of Bonita runtimes for scalability and performance.",
+        "Designed and implemented a real-time monitoring dashboard for applications, processes, and license management.",
+        "Built a performance testing solution with Gatling, Scala, Docker, AWS.",
+        "Conducted R&D on data mining, process mining, and BPMN model generation.",
+        "Ensured code quality through reviews, mentoring, and technical leadership.",
+        "Exploring and prototyping next-generation AI-powered solutions by leveraging LangGraph and LightRAG for intelligent business workflow automation and agent-based process orchestration."
+      ]
+    },
+    {
+      "company": "Meritis (BNP Paribas)",
+      "role": "Full Stack Java/Angular Consultant",
+      "period": "Feb 2020 – Sept 2021",
+      "location": "Aix-en-Provence, France",
+      "bullets": [
+        "Developed a Spring Boot API for enterprise data aggregation (KYC).",
+        "Served as Tech Lead on 3 projects, overseeing delivery quality and CI/CD pipelines.",
+        "Implemented automated delivery pipelines with Jenkins to reduce deployment costs.",
+        "Mentored new hires and conducted code reviews."
+      ]
+    },
+    {
+      "company": "SmartTrade Technologies",
+      "role": "Software Engineer (Java/JEE)",
+      "period": "Apr 2017 – Jan 2020",
+      "location": "Aix-en-Provence, France",
+      "bullets": [
+        "Developed a cloud supervision tool for SmartTrade platforms.",
+        "Built a QA automation framework for functional UI testing integrated into CI/CD.",
+        "Created a Docker-based deployment platform for SmartTrade environments.",
+        "Designed Jira REST API-based dashboards for release tracking."
+      ]
+    },
+    {
+      "company": "Freelance & Early Experience",
+      "role": null,
+      "period": "2013–2016",
+      "location": null,
+      "bullets": [
+        "Built web/mobile applications for SMEs and organizations (management apps, WordPress sites).",
+        "Developed academic projects (career platforms, event booking, GIS wildfire simulation)."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "dockerify-android",
+      "title": "Dockerized Android Emulator",
+      "year": "2024",
+      "description": "Developed a Docker-based Android emulator supporting multiple CPU architectures (x86, arm64 planned), with ADB integration and scrcpy-web for browser-based real-time control. The project has gained strong community traction with 350+ stars and 29 forks on GitHub.",
+      "url": "https://github.com/Shmayro/dockerify-android"
+    },
+    {
+      "name": "Getjobs",
+      "title": "Job Search Engine",
+      "year": "2018",
+      "description": "Designed and developed a career platform with job search and CV builder using Vue.js, Laravel, and REST APIs.",
+      "url": null
+    },
+    {
+      "name": "PyTank",
+      "title": "Educational Python Game",
+      "year": "2015",
+      "description": "Built a gamified learning platform to teach Python through algorithmic tank battles.",
+      "url": null
+    },
+    {
+      "name": "YHEventApp",
+      "title": "Event Booking Web App",
+      "year": "2015",
+      "description": "Implemented a system to manage event registrations and visualizations with PHP, MySQL, and Chart.js.",
+      "url": null
+    },
+    {
+      "name": "University Management System",
+      "title": "University Management System",
+      "year": "2014",
+      "description": "Created an application for academic management (students, schedules, grades) with automated timetable generation.",
+      "url": null
+    }
+  ],
+  "education": [
+    { "degree": "Master's in Software Reliability, Security & Integration", "school": "Aix-Marseille Univ.", "year": "2017" },
+    { "degree": "Master's in Computer Science", "school": "Aix-Marseille Univ.", "year": "2016" },
+    { "degree": "Bachelor in Software Engineering", "school": "High-Tech School, Rabat", "year": "2015" },
+    { "degree": "Advanced Diploma in Software Development", "school": "ISTA Fès", "year": "2013" },
+    { "degree": "High School Diploma in Physics-Chemistry", "school": "Fès, Morocco", "year": "2011" }
+  ],
+  "languages": [
+    { "language": "English", "level": "professional" },
+    { "language": "French", "level": "fluent" },
+    { "language": "Arabic", "level": "native" }
+  ],
+  "interests": ["Technology", "music", "chess", "video games", "tennis"]
+}
