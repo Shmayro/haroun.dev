@@ -1,6 +1,11 @@
 # generate_resume_pdf.py
-# Generates: Haroun_Resume_Final_v6.pdf (clickable links, same as provided)
+# Generates a date-versioned resume PDF: Haroun_EL_ALAMI_CV-DDMMYYYY.pdf
+#
+# Usage:
+#   python generate_resume_pdf.py                  # outputs to current dir
+#   python generate_resume_pdf.py --output-dir /path/to/dir
 
+import argparse
 import json
 import os
 from datetime import datetime
@@ -170,7 +175,18 @@ def build_resume_with_links(output_pdf_path: str) -> None:
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Generate resume PDF")
+    parser.add_argument(
+        "--output-dir",
+        default=".",
+        help="Directory to write the PDF to (default: current directory)",
+    )
+    args = parser.parse_args()
+
     date_stamp = datetime.now().strftime("%d%m%Y")
     filename = f"Haroun_EL_ALAMI_CV-{date_stamp}.pdf"
-    build_resume_with_links(filename)
-    print(filename)
+    output_path = os.path.join(args.output_dir, filename)
+
+    os.makedirs(args.output_dir, exist_ok=True)
+    build_resume_with_links(output_path)
+    print(output_path)

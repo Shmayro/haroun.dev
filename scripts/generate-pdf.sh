@@ -2,10 +2,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-# Generate the PDF; the Python script prints the versioned filename
-PDF_NAME=$(python resume/generate_resume_pdf.py)
+# Python controls filename and writes directly to static/
+PDF_PATH=$(python resume/generate_resume_pdf.py --output-dir static)
 
-# Copy versioned PDF into static/ for SvelteKit
-cp "${PDF_NAME}" "static/${PDF_NAME}"
-
-echo "PDF generated: static/${PDF_NAME}"
+echo "PDF generated: ${PDF_PATH}"
