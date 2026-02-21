@@ -170,4 +170,7 @@ def build_resume_with_links(output_pdf_path: str) -> None:
 
 
 if __name__ == "__main__":
-    build_resume_with_links("Haroun_Resume_Final_v6.pdf")
+    date_stamp = datetime.now().strftime("%d%m%Y")
+    filename = f"Haroun_EL_ALAMI_CV-{date_stamp}.pdf"
+    build_resume_with_links(filename)
+    print(filename)
