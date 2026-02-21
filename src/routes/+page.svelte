@@ -4,6 +4,14 @@
 	let { data } = $props();
 	let resume: ResumeData = $derived(data.resume);
 	let pdfFilename: string = $derived(data.pdfFilename);
+
+	let highlightedSummary: string = $derived.by(() => {
+		let html = resume.summary;
+		for (const phrase of resume.summaryHighlights ?? []) {
+			html = html.replace(phrase, `<strong>${phrase}</strong>`);
+		}
+		return html;
+	});
 </script>
 
 <svelte:head>
@@ -59,7 +67,7 @@
 	<!-- Professional Summary -->
 	<section class="section" aria-labelledby="summary-heading">
 		<h2 id="summary-heading" class="section-heading">Professional Summary</h2>
-		<p class="summary-text">{resume.summary}</p>
+		<p class="summary-text">{@html highlightedSummary}</p>
 	</section>
 
 	<!-- Core Skills -->

@@ -8,6 +8,7 @@ export interface ResumeData {
 	website: string;
 	github: string;
 	summary: string;
+	summaryHighlights: string[];
 	skills: Skill[];
 	experience: Experience[];
 	projects: Project[];

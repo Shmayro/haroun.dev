@@ -8,6 +8,11 @@
   "website": "haroun.dev",
   "github": "github.com/Shmayro",
   "summary": "Results-driven Senior Software Engineer with 8+ years of experience in full-stack development, technical leadership, and cloud-native solutions. Proven expertise in designing, building, and optimizing enterprise-scale applications with Java, Kotlin, Spring Boot, and Angular. Strong background in DevOps, Kubernetes, and AWS, combined with mentoring and code quality leadership. Enthusiastic about AI/ML, process mining, and performance engineering, with a strong ability to bridge technical depth and business needs.",
+  "summaryHighlights": [
+    "Java, Kotlin, Spring Boot, and Angular",
+    "DevOps, Kubernetes, and AWS",
+    "AI/ML, process mining, and performance engineering"
+  ],
   "skills": [
     { "category": "Backend", "items": "Java, Kotlin, Spring Boot (Web/Data/Cloud/Security), Hibernate" },
     { "category": "Frontend", "items": "Angular (12+), Vue.js, TypeScript, JavaScript" },
