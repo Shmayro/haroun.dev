@@ -10,5 +10,17 @@ __pycache__/
 .env
 .env.*
 !.env.example
+!.env.test
 .DS_Store
+Thumbs.db
 docs/plans/
+
+# Deploy outputs
+.output
+.vercel
+.netlify
+.wrangler
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
