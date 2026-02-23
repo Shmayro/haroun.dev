@@ -5,6 +5,12 @@
 	let resume: ResumeData = $derived(data.resume);
 	let pdfFilename: string = $derived(data.pdfFilename);
 
+	const PROJECTS_VISIBLE = 6;
+	let showAllProjects = $state(false);
+	let visibleProjects = $derived(
+		showAllProjects ? resume.projects : resume.projects.slice(0, PROJECTS_VISIBLE)
+	);
+
 	let highlightedSummary: string = $derived.by(() => {
 		let html = resume.summary;
 		for (const phrase of resume.summaryHighlights ?? []) {
@@ -119,7 +125,7 @@
 	<section class="section" aria-labelledby="projects-heading">
 		<h2 id="projects-heading" class="section-heading">Personal Projects</h2>
 		<div class="projects-grid">
-			{#each resume.projects as project (project.name)}
+			{#each visibleProjects as project (project.name)}
 				<article class="project-card">
 					<div class="project-header">
 						<h3 class="project-name">{project.name}</h3>
@@ -150,6 +156,11 @@
 				</article>
 			{/each}
 		</div>
+		{#if resume.projects.length > PROJECTS_VISIBLE}
+			<button class="show-more-btn" onclick={() => (showAllProjects = !showAllProjects)}>
+				{showAllProjects ? 'Show less' : `Show ${resume.projects.length - PROJECTS_VISIBLE} more projects`}
+			</button>
+		{/if}
 	</section>
 
 	<!-- Education -->
@@ -592,6 +603,25 @@
 
 	.meta-sep {
 		margin: 0 4px;
+	}
+
+	.show-more-btn {
+		display: block;
+		margin: 16px auto 0;
+		padding: 8px 20px;
+		background: none;
+		border: 1px solid var(--color-accent);
+		color: var(--color-accent);
+		border-radius: 100px;
+		font-size: 0.88rem;
+		font-weight: 600;
+		cursor: pointer;
+		transition: background-color 0.2s, color 0.2s;
+	}
+
+	.show-more-btn:hover {
+		background: var(--color-accent);
+		color: #fff;
 	}
 
 	.project-link {

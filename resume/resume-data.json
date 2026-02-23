@@ -79,7 +79,7 @@
       "name": "dockerify-android",
       "title": "Dockerized Android Emulator",
       "year": "2024",
-      "description": "Developed a Docker-based Android emulator supporting multiple CPU architectures (x86, arm64 planned), with ADB integration and scrcpy-web for browser-based real-time control. The project has gained strong community traction with 350+ stars and 29 forks on GitHub.",
+      "description": "Developed a Docker-based Android emulator supporting multiple CPU architectures (x86, arm64 planned), with ADB integration and scrcpy-web for browser-based real-time control. The project has gained strong community traction with 500+ stars and 50+ forks on GitHub.",
       "url": "https://github.com/Shmayro/dockerify-android",
       "technologies": ["Docker", "Android SDK", "ADB", "scrcpy-web"],
       "teamSize": "solo"
@@ -142,7 +142,7 @@
   ],
   "languages": [
     { "language": "English", "level": "professional" },
-    { "language": "French", "level": "fluent" },
+    { "language": "French", "level": "native" },
     { "language": "Arabic", "level": "native" }
   ],
   "interests": ["Technology", "music", "chess", "video games", "tennis"]
